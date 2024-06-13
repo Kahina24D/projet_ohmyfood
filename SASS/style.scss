@@ -1,0 +1,261 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, sans-serif, Roboto;
+}
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+
+
+  .navbar__logo {
+    margin-top: 12px;
+    object-fit: cover;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+
+
+  }
+
+  .navbar__explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $graybackround;
+    height: 300px;
+
+    .navbar__textexplore--bold {
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      padding-bottom: -10px;
+    }
+
+    .navbar__textexplore--gray {
+
+      font-family: 'Roboto';
+      font-size: 18px;
+
+      width: 70%;
+      text-align: center;
+
+
+    }
+
+    @include btn_explore
+  }
+
+  .navbar_localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 14px;
+
+    background-color: #EAEAEA;
+    @extend %shadow;
+
+    .fa-location-dot {
+
+      position: relative;
+      left: 25px;
+    }
+
+    input {
+      border: none;
+
+      background-color: #EAEAEA;
+
+      font-size: 15px;
+      text-align: center;
+      font-weight: 700;
+
+
+    }
+  }
+}
+
+
+
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+margin: auto;
+  padding-bottom: 100px;
+
+  .menu__choix {
+    display: flex;
+
+    justify-content: center;
+
+    flex-direction: column;
+    margin: auto;
+
+    gap: 20px;
+
+    %shadow {
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu__choix--choix {
+      display: flex;
+      @extend %shadow;
+      flex-direction: row;
+      border-radius: 20px;
+      justify-content: center;
+      gap: 30px;
+      background: $graybackround;
+      padding-top: 20px;
+      width: 340px;
+      height: 50px;
+      position: relative;
+
+      .choix {
+        color: $gray;
+      }
+
+      span {
+        position: absolute;
+        left: -1rem;
+        top: 30%;
+        padding: 0.5rem 0.6rem;
+        border-radius: 50%;
+        background-color: $lightpurple;
+        width: 12px;
+        height: 12px;
+        justify-content: center;
+
+        color: aliceblue;
+
+      }
+    }
+  }
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  color: $grayblack;
+
+  background-color: $graybackround;
+  padding: 10px;
+  gap: 15px;
+
+
+
+  .restaurant__card {
+
+    background-color: $graywhite;
+    @include calc(100%, 0px);
+    border-radius: 20px;
+
+
+    & a {
+      width: 100%;
+      height: 180px;
+      text-decoration: none;
+      color: $grayblack;
+
+      .text_gray {
+        font-size: 20px;
+
+        padding: 13px;
+        font-weight: 300;
+        font-family: roboto;
+        line-height: 19px;
+      }
+
+      h3 {
+        width: 100;
+        padding-left: 13px;
+        font-size: 18px;
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: 231px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}
+
+footer {
+  background-color: #353535;
+
+  padding: 13px;
+  color: $graywhite;
+
+  a {
+    @extend footer;
+    text-decoration: none;
+
+  }
+
+  p {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  .menu {
+    display: flex;
+    .menu__choix {
+
+      display: flex;
+      flex-direction: row;
+    flex-wrap: wrap;
+      margin: auto;
+      gap: 25px;
+
+    }
+  }
+
+  .restaurant {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .restaurants_cards {
+
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 8fr));
+      grid-auto-rows: 340px;
+      gap: 100px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+
+
+    }
+
+  }
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    .info-restaurant{
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      padding-top: 13px;
+    }
+  }
+}

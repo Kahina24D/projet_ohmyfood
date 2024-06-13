@@ -1,0 +1,19 @@
+@mixin calc($width,$pixels){
+   
+  
+    width: calc(#{$width} - #{$pixels});
+}
+
+@mixin btn_explore{
+    .bouton-explore {
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        padding: 18px;
+        border: none;
+        border-radius: 20px;
+        color: $graywhite;
+        font-size: 15px;
+        margin: 0;
+       
+
+      }
+}

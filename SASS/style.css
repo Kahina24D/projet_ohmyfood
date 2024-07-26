@@ -167,18 +167,14 @@ header img {
   font-size: 22px;
 }
 .restaurants .container .restaurants_cards .restaurant__card .card-heart .heart .my-heart-full {
-  opacity: 0;
-  transition-property: all;
-  transition: 1s;
-  color: white;
+  color: transparent;
 }
 .restaurants .container .restaurants_cards .restaurant__card .card-heart .heart .my-heart-full:hover {
-  opacity: 1;
-  color: transparent;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   transform-origin: center;
+  animation: heart 0.5s ease both;
 }
 .restaurants .container .restaurants_cards .restaurant__card a {
   width: 100%;

@@ -93,15 +93,15 @@ form {
   }
 }
 
-h1{
+h1 {
   padding: 25px;
 
   font-style: italic;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif,sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: 2rem;
   font-weight: bolder;
-  color:black;
+  color: black;
 }
 
 .entree,
@@ -140,26 +140,25 @@ h1{
 .heart-titre {
   display: flex;
 
-text-align: center;
+  text-align: center;
   gap: 0.5rem;
 
   .heart {
     display: flex;
+
     align-items: center;
+
     font-size: 22px;
 
     .my-heart-full {
-      opacity: 0;
-      transition-property: all;
-      transition: 1s;
-      color: #ffff;
+      color: transparent;
 
       &:hover {
-        opacity: 1;
-        color: transparent;
         background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         background-clip: text;
         -webkit-background-clip: text;
+        transform-origin: center;
+        animation: heart 0.5s ease both;
       }
     }
 
@@ -204,23 +203,23 @@ text-align: center;
 
 
       h2 {
-     
+
         font-size: 18px;
         white-space: nowrap;
-    
-       
+
+
 
 
       }
 
-  
+
 
     }
 
     .menu-price {
       display: flex;
-   
- 
+
+
 
 
 
@@ -240,13 +239,15 @@ text-align: center;
       overflow: hidden;
 
     }
-    h2 ,p{
+
+    h2,
+    p {
       width: 200px;
-    
+
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-     
+
 
 
     }
@@ -263,7 +264,7 @@ text-align: center;
 
   0% {
     opacity: 0;
-     transform: translateX(5px);
+    transform: translateX(5px);
   }
 
   100% {
@@ -355,28 +356,33 @@ footer {
       width: 70%;
       position: relative;
       z-index: 1;
-.article-menu{
-  .menu-texts{
-  .menu-titles{
-  h2,p{
- 
+
+      .article-menu {
+        .menu-texts {
+          .menu-titles {
+
+            h2,
+            p {
 
 
-     
-        white-space: nowrap;
-        text-overflow:clip;
-        overflow: visible;
-    
-  }
-}
-}
-}
-       .heart-titre {
+
+
+              white-space: nowrap;
+              text-overflow: clip;
+              overflow: visible;
+
+            }
+          }
+        }
+      }
+
+      .heart-titre {
         display: flex;
         justify-content: center;
-        gap: 1rem;}
+        gap: 1rem;
+      }
 
-     
+
 
 
       .titre-menu {
@@ -394,8 +400,8 @@ footer {
       .listes-menu {
         margin: auto;
         width: 60%;
-        
-   
+
+
 
       }
     }
@@ -446,4 +452,19 @@ footer {
 
 
 
+}
+
+@keyframes heart {
+
+  0% {
+    transform: scale(0)
+  }
+
+  ;
+
+  100% {
+    transform: scale(1)
+  }
+
+  ;
 }

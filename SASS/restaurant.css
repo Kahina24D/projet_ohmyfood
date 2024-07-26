@@ -116,17 +116,14 @@ h1 {
   font-size: 22px;
 }
 .heart-titre .heart .my-heart-full {
-  opacity: 0;
-  transition-property: all;
-  transition: 1s;
-  color: white;
+  color: transparent;
 }
 .heart-titre .heart .my-heart-full:hover {
-  opacity: 1;
-  color: transparent;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
+  transform-origin: center;
+  animation: heart 0.5s ease both;
 }
 .heart-titre .heart i {
   position: absolute;
@@ -171,7 +168,8 @@ h1 {
   animation: menu 0.5s ease-in-out both;
   overflow: hidden;
 }
-.article-menu:hover h2, .article-menu:hover p {
+.article-menu:hover h2,
+.article-menu:hover p {
   width: 200px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -242,7 +240,8 @@ footer .container-footer .info-restaurant .info .info2 {
     position: relative;
     z-index: 1;
   }
-  form .menu .article-menu .menu-texts .menu-titles h2, form .menu .article-menu .menu-texts .menu-titles p {
+  form .menu .article-menu .menu-texts .menu-titles h2,
+  form .menu .article-menu .menu-texts .menu-titles p {
     white-space: nowrap;
     text-overflow: clip;
     overflow: visible;
@@ -285,5 +284,13 @@ footer .container-footer .info-restaurant .info .info2 {
   footer .container-footer .info-restaurant .info {
     display: flex;
     flex-direction: row-reverse;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }/*# sourceMappingURL=restaurant.css.map */

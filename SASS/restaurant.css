@@ -70,7 +70,57 @@ form .menu .commander .bouton-commander {
 form .menu .listes-menu {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 45px;
+}
+form .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+form .menu .entree li {
+  list-style-type: none;
+  opacity: 0;
+  animation: animations-plats 0.4s forwards;
+}
+form .menu .entree li:nth-child(1) {
+  animation-delay: 0s;
+}
+form .menu .entree li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+form .menu .entree li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+form .menu .entree li:nth-child(4) {
+  animation-delay: 0.5s;
+}
+form .menu .Plats li {
+  list-style-type: none;
+  opacity: 0;
+  animation: animations-plats 0.4s forwards;
+}
+form .menu .Plats li:nth-child(1) {
+  animation-delay: 0.6s;
+}
+form .menu .Plats li:nth-child(2) {
+  animation-delay: 0.8s;
+}
+form .menu .Plats li:nth-child(3) {
+  animation-delay: 1s;
+}
+form .menu .Desserts li {
+  list-style-type: none;
+  opacity: 0;
+  animation: animations-plats 0.4s forwards;
+}
+form .menu .Desserts li:nth-child(1) {
+  animation-delay: 1.2s;
+}
+form .menu .Desserts li:nth-child(2) {
+  animation-delay: 1.4s;
+}
+form .menu .Desserts li:nth-child(3) {
+  animation-delay: 1.8s;
 }
 
 h1 {
@@ -88,7 +138,7 @@ h1 {
 .Desserts {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .sous-titre__menu {
@@ -292,5 +342,15 @@ footer .container-footer .info-restaurant .info .info2 {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes animations-plats {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }/*# sourceMappingURL=restaurant.css.map */

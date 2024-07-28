@@ -84,9 +84,86 @@ form {
     .listes-menu {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-
+      gap: 45px;
     }
+    ul{
+      display: flex;
+      flex-direction: column;
+   gap:0.8rem;
+     
+    }
+      //entres
+     
+
+      .entree li {
+      list-style-type: none;
+        opacity: 0;
+        animation: animations-plats 0.4s forwards;
+      }
+
+      .entree li:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .entree li:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .entree li:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      .entree li:nth-child(4) {
+        animation-delay: 0.5s;
+      }
+
+      //repas
+     
+
+      .Plats li {
+        list-style-type: none;
+        opacity: 0;
+        animation: animations-plats 0.4s forwards;
+      }
+
+      .Plats li:nth-child(1) {
+        animation-delay: 0.6s;
+      }
+
+      .Plats li:nth-child(2) {
+        animation-delay: 0.8s;
+      }
+
+      .Plats li:nth-child(3) {
+        animation-delay: 1s;
+      }
+
+     
+
+      //desserts
+
+    
+
+      .Desserts li {
+        list-style-type: none;
+        opacity: 0;
+        animation: animations-plats 0.4s forwards;
+      }
+
+      .Desserts li:nth-child(1) {
+        animation-delay: 1.2s;
+      }
+
+      .Desserts li:nth-child(2) {
+        animation-delay: 1.4s;
+      }
+
+      .Desserts li:nth-child(3) {
+        animation-delay: 1.8s;
+      }
+
+     
+   
 
 
 
@@ -110,7 +187,8 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+
 
 
 }
@@ -466,5 +544,20 @@ footer {
     transform: scale(1)
   }
 
-  ;
+
+}
+
+@keyframes animations-plats {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+
 }

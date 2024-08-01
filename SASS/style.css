@@ -171,6 +171,7 @@ header img {
   flex: 1;
   justify-content: space-between;
   position: relative;
+  background-color: red;
 }
 .restaurants .container .restaurants_cards .restaurant__card .card-heart i {
   position: absolute;

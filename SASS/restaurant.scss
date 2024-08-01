@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: 'Roboto', sans-serif, Georgia, 'Times New Roman', Times;
 }
 
 
@@ -14,6 +14,16 @@
   display: flex;
   flex-direction: row-reverse;
   padding: 15px;
+ & a {
+   display: flex;
+    color: #0e0d0d;
+    margin-left: 1rem;
+   justify-content: left;
+   align-items: center;
+text-decoration: none;
+  
+
+  }
 
   & img {
 
@@ -25,10 +35,7 @@
 
   }
 
-  a {
-    color: black;
-    margin-left: 1rem;
-  }
+ 
 }
 
 .image-menu {
@@ -61,6 +68,11 @@ form {
     position: relative;
     top: 50%;
     gap: 20px;
+    .heart-titre{
+      display: flex;
+ 
+      align-content: center;
+    }
 
     .commander {
       display: flex;
@@ -73,6 +85,7 @@ form {
         @include btn_explore;
         width: 186px;
         border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
 
       }
@@ -218,7 +231,7 @@ h1 {
 .heart-titre {
   display: flex;
 
-  text-align: center;
+  justify-content: center;
   gap: 0.5rem;
 
   .heart {
@@ -443,8 +456,6 @@ footer {
             p {
 
 
-
-
               white-space: nowrap;
               text-overflow: clip;
               overflow: visible;
@@ -456,7 +467,7 @@ footer {
 
       .heart-titre {
         display: flex;
-        justify-content: center;
+     justify-content: center;
         gap: 1rem;
       }
 

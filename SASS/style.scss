@@ -201,7 +201,7 @@ header img {
   display: flex;
   flex-direction: column;
   color: $grayblack;
-
+   justify-content: center;
   background-color: $graybackround;
   padding: 1rem 1rem;
 
@@ -210,7 +210,7 @@ header img {
     max-width: 1400px;
 
     position: relative;
-    justify-content: center;
+ 
     gap: 1rem;
 
     .restaurants_cards {

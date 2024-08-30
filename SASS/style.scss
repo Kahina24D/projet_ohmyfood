@@ -120,8 +120,8 @@ header img {
 .Fonctionnement {
   @include flex-column;
 
-   padding: 1rem;
- 
+  padding: 1rem;
+
 
 
 
@@ -131,8 +131,8 @@ header img {
     flex-direction: column;
 
     gap: 2rem;
-  
-    
+
+
 
 
     .menu {
@@ -171,7 +171,8 @@ header img {
       position: relative;
 
       &:active i {
-        color: $lightpurple;
+        color: purple;
+
       }
 
       .choix {
@@ -233,7 +234,7 @@ header img {
 
           justify-content: space-between;
           position: relative;
-   
+
 
           i {
             position: absolute;
@@ -256,9 +257,9 @@ header img {
               &:hover {
 
                 background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                 background-clip: text;
-               -webkit-background-clip: text;
-             animation: heart ;
+                background-clip: text;
+                -webkit-background-clip: text;
+                animation: heart;
 
               }
             }
@@ -364,10 +365,10 @@ footer {
   .Fonctionnement {
     @include flex-column;
 
-     padding: 3rem 6rem;
+    padding: 3rem 6rem;
 
     justify-content: center;
- 
+
 
     .container {
 
@@ -395,19 +396,19 @@ footer {
 
     padding: 3rem 6rem;
 
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 
     .container {
       display: flex;
       flex-direction: column;
-      
+
       .restaurants_cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-     
-       
+
+
 
         gap: 3rem;
 
@@ -456,14 +457,6 @@ footer {
       }
 
     }
-
-
-
-
-
-
-
-
 
   }
 

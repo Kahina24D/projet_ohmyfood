@@ -124,7 +124,7 @@ header img {
   position: relative;
 }
 .Fonctionnement .container .menu__choix--choix:active i {
-  color: #9356DC;
+  color: purple;
 }
 .Fonctionnement .container .menu__choix--choix .choix {
   color: #7E7E7E;
@@ -136,7 +136,7 @@ header img {
   position: absolute;
   left: -1rem;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #6f11e2;
   width: 1.5rem;
   height: 1.5rem;
   color: aliceblue;

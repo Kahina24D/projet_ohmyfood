@@ -46,6 +46,10 @@ form {
 form .menu {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+=======
+  padding: 20px;
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
   background-color: #F6F6F6;
   border-radius: 30px;
   width: 100%;
@@ -54,6 +58,7 @@ form .menu {
   top: 50%;
   gap: 20px;
 }
+<<<<<<< HEAD
 form .menu .titre-menu {
   font-family: Chalkduster, fantasy, cursive;
   font-size: 2.5rem;
@@ -65,6 +70,11 @@ form .menu .heart-titre {
   align-items: center;
   justify-content: space-between;
   padding-right: 3rem;
+=======
+form .menu .heart-titre {
+  display: flex;
+  align-content: center;
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
 }
 form .menu .commander {
   display: flex;
@@ -80,16 +90,22 @@ form .menu .commander .bouton-commander {
   color: white;
   font-size: 15px;
   margin: 0;
+<<<<<<< HEAD
   position: relative;
   transition: transform 0.3s;
+=======
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
   width: 186px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+<<<<<<< HEAD
 form .menu .commander .bouton-commander:hover {
   opacity: 0.7;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
 }
+=======
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
 form .menu .listes-menu {
   display: flex;
   flex-direction: column;
@@ -162,7 +178,10 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
+<<<<<<< HEAD
   padding: 1rem;
+=======
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
 }
 
 .sous-titre__menu {
@@ -190,6 +209,7 @@ h1 {
   font-size: 22px;
 }
 .heart-titre .heart .my-heart-full {
+<<<<<<< HEAD
   transform-origin: bottom;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -202,6 +222,16 @@ h1 {
   -webkit-background-clip: text;
   opacity: 1;
   transform-origin: bottom;
+=======
+  color: transparent;
+}
+.heart-titre .heart .my-heart-full:hover {
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform-origin: center;
+  animation: heart;
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
 }
 .heart-titre .heart i {
   position: absolute;
@@ -214,6 +244,7 @@ h1 {
   border-radius: 15px 15px 15px 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow: hidden;
+<<<<<<< HEAD
   position: relative;
 }
 .article-menu .menu-check {
@@ -228,6 +259,8 @@ h1 {
 .article-menu:hover .menu-check {
   margin-right: 0;
   background-color: #99e2d0;
+=======
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
 }
 .article-menu .menu-texts {
   display: flex;
@@ -250,8 +283,23 @@ h1 {
 .article-menu .menu-texts .menu-price {
   display: flex;
 }
+<<<<<<< HEAD
 .article-menu h2,
 .article-menu p {
+=======
+.article-menu:hover .menu-check {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  animation: menu 0.5s ease-in-out both;
+  overflow: hidden;
+}
+.article-menu:hover h2,
+.article-menu:hover p {
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
   width: 200px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -264,11 +312,19 @@ h1 {
 @keyframes menu {
   0% {
     opacity: 0;
+<<<<<<< HEAD
     transform: translateX(100%);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+=======
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
   }
 }
 footer .container-footer {
@@ -333,11 +389,21 @@ footer .container-footer .info-restaurant .info .info2 {
     justify-content: center;
     gap: 1rem;
   }
+<<<<<<< HEAD
   form .menu .titre-menu .titre-menu {
     font-family: Chalkduster, fantasy, cursive;
     font-size: 2.5rem;
     font-style: italic;
     font-weight: 40;
+=======
+  form .menu .titre-menu {
+    padding: 25px;
+    font-style: italic;
+    text-align: center;
+    font-family: "Shrikhand", Times, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
   }
   form .menu .listes-menu {
     margin: auto;
@@ -383,6 +449,7 @@ footer .container-footer .info-restaurant .info .info2 {
     opacity: 1;
     transform: translateY(0px);
   }
+<<<<<<< HEAD
 }
 @keyframes progress-bar {
   0% {
@@ -391,4 +458,6 @@ footer .container-footer .info-restaurant .info .info2 {
   100% {
     transform: scaleX(1);
   }
+=======
+>>>>>>> bb8f378fd15493b748cc19ad10039f72b1e5e568
 }/*# sourceMappingURL=restaurant.css.map */

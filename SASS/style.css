@@ -105,20 +105,18 @@ header img {
 .Fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  padding: 1.5rem;
 }
 .Fonctionnement .container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 1.5rem;
 }
 .Fonctionnement .container .menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 0.8rem;
 }
 .Fonctionnement .container .menu__choix--choix {
   display: flex;

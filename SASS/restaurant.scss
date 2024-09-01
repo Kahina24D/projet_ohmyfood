@@ -430,6 +430,10 @@ footer {
     color: #FFFF;
     font-size: 1rem;
 
+    .footer__logo {
+      width: 120px;
+    }
+
     .info-restaurant {
       display: flex;
       flex-direction: column-reverse;

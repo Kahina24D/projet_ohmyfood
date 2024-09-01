@@ -280,6 +280,9 @@ footer .container-footer {
   color: white;
   font-size: 1rem;
 }
+footer .container-footer .footer__logo {
+  width: 120px;
+}
 footer .container-footer .info-restaurant {
   display: flex;
   flex-direction: column-reverse;

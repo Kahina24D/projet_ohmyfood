@@ -130,7 +130,7 @@ header img {
   @include flex-column;
 
   padding: 1rem;
-  padding: 1.5rem;
+
 
   .container {
     display: flex;
@@ -148,7 +148,7 @@ header img {
       flex-wrap: wrap;
 
       gap: 1rem;
-      padding: 0.2rem;
+      padding: 0.1rem;
 
     }
 
